@@ -36,7 +36,7 @@ function playRound(humanChoice, computerChoice){
         console.log(`You win. ${humanChoice} beats ${computerChoice}`)
     }
     else if(humanChoice == computerChoice){
-        console.log(`You win. ${humanChoice} beats ${computerChoice}`)
+        console.log(`Game draw. ${humanChoice} draws ${computerChoice}`)
     }
     else {
         computeScore += 1;
