@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Bibliotheca</h1>
+            <button id="open-dialog" disabled>+ Add Book</button>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="prompt">
+                <p id="quote">Start by adding books.</p>
+                <button id="show-dialog">Add book</button>
+            </div>
+            <dialog id="book-form">
+                    <form method="dialog" class="form-detail">
+                        <div class="book-details">
+                            <label for="name">Book:</label>
+                            <input type="text" name="book" id="name">
+                        </div>
+                        <div class="book-details">
+                            <label for="author">Author:</label>
+                            <input type="text" name="author" id="author">
+                        </div>
+                        <div class="book-details">
+                            <label for="pages">Pages:</label>
+                            <input type="text" name="pages" id="pages">
+                        </div>
+                        <div class="book-details">
+                            <label for="complete">Status:</label>
+                            <input type="text" name="complete" id="complete">
+                        </div>
+                        <div class="dialog-options">
+                            <button id="cancel-btn" value="cancel" formmethod="dialog" class="dialog-btn cancel">Cancel</button>
+                            <button id="confirm-btn" value="default" class="dialog-btn confirm">Confirm</button>
+                        </div>
+                    </form>
+            </dialog>
+            <dialog class="edit-dialog">
+                <form action="" class="edit-form">
+                    <div class="edit-details">
+                        <label for="status">New status:</label>
+                        <input type="text" name="status" id="edit-status">
+                    </div>
+                    <div class="change-buttons">
+                        <button value="cancel" formmethod="dialog" class="dialog-btn edit-cancel cancel">Cancel</button>
+                        <button id="edit-confirm-btn" value="default" class="dialog-btn edit-confirm confirm">Confirm</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

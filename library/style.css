@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Matemasie", sans-serif;
+    --header-color: rgb(188, 136, 68);
+    
+}
+header{
+    height: 10svh;
+    width: 100svw;
+    box-shadow: 1px 3px 3px rgba(20, 20, 20, 0.2); 
+    background-color: antiquewhite;
+}
+.header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    color: var(--header-color);
+}
+.header h1{
+    padding-right: 10px;
+}
+
+.header #open-dialog{
+    padding: 5px;
+    width: 120px;
+    border: none;
+    background-color: var(--header-color);
+    color: #ffffff;
+    border-radius: 25px;
+    margin: 10px;
+    transition: 0.5s ease;
+}
+
+#open-dialog:hover{
+    letter-spacing: 0.1em;
+    box-shadow: 4px 5px 5px 0px rgba(188, 136, 68, 0.6);
+}
+
+main{
+    height: 80svh;
+    width: 100svw;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+
+}
+.main .prompt{
+    height: 100%;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main #quote{
+    font-size: 2rem;
+    color: grey;
+}
+.main #show-dialog{
+    height: 40px;
+    width: 120px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    transition: 0.5s ease;
+}
+
+
+
+#show-dialog:hover{
+    letter-spacing: 0.1em;
+    box-shadow: 4px 5px 5px 5px rgba(20, 20, 20, 0.3);
+}
+
+#book-form{
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+#book-form .form-detail{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.form-detail .book-details{
+    display: grid;
+    padding: 30px 20px 20px 20px;
+    grid-template-columns: 0.5fr 0.8fr;
+    height: 84px;
+    width: 380px;
+}
+
+.form-detail .book-details label{
+    font-size: 20px;
+}
+
+.form-detail .book-details input{
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+.dialog-options{
+    height: 34px;
+}
+
+.dialog-btn{
+    border: none;
+    color: #ffffff;
+    height: 34px;
+    transition: 0.5s ease;
+}
+
+.dialog-btn:hover{
+    letter-spacing: 0.1em;
+    box-shadow: 4px 4px 4px 2px rgba(20, 20, 20, 0.3);
+}
+
+.confirm{
+    background-color: green;
+}   
+
+.cancel{
+    background-color: red;
+}
+
+
+.dialog-btn{
+    width: 150px;
+    border-radius: 20px;
+}
+
+.form-detail .dialog-options{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 0.5fr 0.5fr; 
+}
+
+.dialog-options .confirm{
+    justify-self: center;
+}
+
+.card-style{
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 10px 0px rgba(60, 60, 60, 0.8);
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.btn-style{
+    grid-column: 1 /3;
+    width: 240px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: red;
+    font-size: large;
+    transition: 0.5s ease;
+}
+
+.btn-style:hover{
+    letter-spacing: 0.1em;
+    box-shadow: 4px 5px 5px 5px rgba(20, 20, 20, 0.3);
+}
+
+.edit{
+    background-color: green;
+}
+
+
+.edit-dialog{
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.edit-form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit-form .edit-details{
+    display: grid;
+    grid-template-rows: repeat(1fr,2);
+}
+
+.edit-details label{
+    font-size: 30px;
+}
+
+.edit-details input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.change-buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 10px;
+}
