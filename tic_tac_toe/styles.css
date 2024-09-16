@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Wet Paint", system-ui;
+}
+body,html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFCFC;
+    box-shadow: 1px 3px 3px rgba(20, 20, 20, 0.2); 
+}
+
+h1{
+    padding: 10px;
+    font-size: 4em;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-option{
+    font-size: 2em;
+    margin: 1em;
+    
+}
+
+
+.playing-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.playing-boxes .input-box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.container #restart{
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: center;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+
+main #over{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
+    border: none;
+}
+
+main .game-over{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+main #again{
+    width: 80%;
+    height: 20%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    outline: none;
+}
+
+.play-btn{
+    transition: 0.5s ease;
+}
+
+.play-btn:hover{
+    letter-spacing: 0.1em;
+    box-shadow: 4px 5px 5px 5px rgba(20, 20, 20, 0.3);
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2F2F2F;
+}
+
