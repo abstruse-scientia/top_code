@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="player-option">Player X vs Player Y</div>
+            <div class="playing-boxes">
+                <div class="input-box" data-x="0" data-y="0"></div>
+                <div class="input-box" data-x="0" data-y="1"></div>
+                <div class="input-box" data-x="0" data-y="2"></div>
+                <div class="input-box" data-x="1" data-y="0"></div>
+                <div class="input-box" data-x="1" data-y="1"></div>
+                <div class="input-box" data-x="1" data-y="2"></div>
+                <div class="input-box" data-x="2" data-y="0"></div>
+                <div class="input-box" data-x="2" data-y="1"></div>
+                <div class="input-box" data-x="2" data-y="2"></div>
+            </div>
+            <button id="restart" class="play-btn">Play again</button>
+        </div>
+        <dialog id="over">
+            <div class="game-over">
+            </div>
+            <button id="again" class="play-btn">Play again</button>
+        </dialog>
+    </main>
+    <footer>
+        <p>Made by abstruse_scientia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
